@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SSV Travel - Votre agence de voyage au Cameroun. Réservez vos billets d'avion vers Paris, Dubaï, Istanbul, New York et plus. Meilleurs prix garantis.">
+    <meta name="keywords"
+        content="billet avion Cameroun, voyage Cameroun, agence voyage Douala, agence voyage Yaoundé, vol pas cher Cameroun">
+    <title>SSV Travel | Voyagez Sans Limites Depuis le Cameroun ✈️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#b91d1d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">SSV <span class="logo-accent">Travel</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#destinations" data-i18n="nav_destinations">Destinations</a></li>
+                <li><a href="#avantages" data-i18n="nav_advantages">Avantages</a></li>
+                <li><a href="#temoignages" data-i18n="nav_testimonials">Témoignages</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="nav_book">Réserver</a></li>
+                <li class="lang-switcher">
+                    <span class="globe-icon">🌍</span>
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <span class="hero-badge animate-on-scroll" data-i18n="hero_badge">🌍 Première agence de voyage au
+                Cameroun</span>
+            <h1 class="hero-title animate-on-scroll">
+                <span data-i18n="hero_title_1">Voyagez </span><span class="gradient-text" data-i18n="hero_title_2">Sans
+                    Limite</span><br>
+                <span data-i18n="hero_title_3">À Travers le Monde</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll" data-i18n="hero_subtitle">
+                Des billets d'avion aux meilleurs prix vers toutes les destinations du monde.
+                Paris, Dubaï, New York... votre prochaine aventure commence ici.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span data-i18n="hero_cta_primary">Réserver Maintenant</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#destinations" class="btn btn-outline">
+                    <span data-i18n="hero_cta_secondary">Voir les Destinations</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2500">0</span>
+                    <span class="stat-label" data-i18n="stat_clients">Clients Satisfaits</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="85">0</span>
+                    <span class="stat-label" data-i18n="stat_destinations">Destinations</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label" data-i18n="stat_experience">Ans d'Expérience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span data-i18n="scroll_down">Défilez</span>
+        </div>
+    </section>
+
+    <!-- ========== DESTINATIONS ========== -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-i18n="dest_tag">✨ Explorez le Monde</span>
+                <h2 class="section-title"><span data-i18n="dest_title_1">Destinations </span><span class="gradient-text"
+                        data-i18n="dest_title_2">Populaires</span></h2>
+                <p class="section-subtitle" data-i18n="dest_subtitle">Découvrez nos destinations les plus demandées avec
+                    des tarifs imbattables
+                </p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card animate-on-scroll" data-delay="0">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop&q=80"
+                            alt="Paris, France" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge" data-i18n="dest_badge_pop">Populaire</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>France</span>
+                        </div>
+                        <h3>Paris</h3>
+                        <p>La Ville Lumière vous attend avec ses monuments iconiques et sa gastronomie raffinée.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label" data-i18n="price_from">À partir de</span>
+                                <span class="price-value">450 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small" data-i18n="book_btn">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&q=80"
+                            alt="Dubaï, Émirats Arabes Unis" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge hot">Tendance</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Émirats Arabes Unis</span>
+                        </div>
+                        <h3>Dubaï</h3>
+                        <p>Luxe, modernité et démesure au cœur du désert. Shopping et aventure garantis.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">380 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&h=400&fit=crop&q=80"
+                            alt="Istanbul, Turquie" loading="lazy">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Turquie</span>
+                        </div>
+                        <h3>Istanbul</h3>
+                        <p>Entre Orient et Occident, une ville millénaire aux saveurs et couleurs envoûtantes.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">320 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop&q=80"
+                            alt="New York, États-Unis" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge">Classique</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>États-Unis</span>
+                        </div>
+                        <h3>New York</h3>
+                        <p>La ville qui ne dort jamais. Times Square, Broadway, Central Park et bien plus.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">580 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1577948000111-9c970dfe3743?w=600&h=400&fit=crop&q=80"
+                            alt="Johannesburg, Afrique du Sud" loading="lazy">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Afrique du Sud</span>
+                        </div>
+                        <h3>Johannesburg</h3>
+                        <p>La porte d'entrée de l'Afrique australe. Safari, culture et modernité africaine.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">290 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="500">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&h=400&fit=crop&q=80"
+                            alt="Pékin, Chine" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge hot">Nouveau</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Chine</span>
+                        </div>
+                        <h3>Pékin</h3>
+                        <p>Empire du Milieu : Grande Muraille, Cité Interdite et culture fascinante.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">420 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="600">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519178614-68673b201f36?w=600&h=400&fit=crop&q=80"
+                            alt="Montréal, Canada" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge">Francophone</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Canada (Québec)</span>
+                        </div>
+                        <h3>Montréal</h3>
+                        <p>Le cœur francophone du Canada. Culture vibrante, festivals, gastronomie et accueil
+                            chaleureux.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">520 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card animate-on-scroll" data-delay="700">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1507992781348-310259076fe0?w=600&h=400&fit=crop&q=80"
+                            alt="Toronto, Canada" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <span class="card-badge hot">Canada 🇨🇦</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Canada (Ontario)</span>
+                        </div>
+                        <h3>Toronto</h3>
+                        <p>La métropole anglophone du Canada. CN Tower, diversité culturelle et opportunités infinies.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">540 000 FCFA</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== AVANTAGES ========== -->
+    <section class="avantages" id="avantages">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-i18n="adv_tag">🏆 Pourquoi Nous ?</span>
+                <h2 class="section-title"><span data-i18n="adv_title_1">Vos Avantages avec </span><span
+                        class="gradient-text" data-i18n="adv_title_2">SSV Travel</span></h2>
+                <p class="section-subtitle" data-i18n="adv_subtitle">Une expérience de réservation premium adaptée au
+                    marché camerounais</p>
+            </div>
+            <div class="avantages-grid">
+                <div class="avantage-card animate-on-scroll" data-delay="0">
+                    <div class="avantage-icon">
+                        <div class="icon-bg">💰</div>
+                    </div>
+                    <h3 data-i18n="adv_1_title">Meilleurs Prix Garantis</h3>
+                    <p data-i18n="adv_1_desc">Nous négocions directement avec les compagnies aériennes pour vous offrir
+                        les tarifs les plus
+                        compétitifs du marché camerounais.</p>
+                </div>
+                <div class="avantage-card animate-on-scroll" data-delay="150">
+                    <div class="avantage-icon">
+                        <div class="icon-bg">🕐</div>
+                    </div>
+                    <h3>Support 24h/7j</h3>
+                    <p>Notre équipe est disponible jour et nuit par WhatsApp, téléphone et email pour répondre à toutes
+                        vos questions.</p>
+                </div>
+                <div class="avantage-card animate-on-scroll" data-delay="300">
+                    <div class="avantage-icon">
+                        <div class="icon-bg">📱</div>
+                    </div>
+                    <h3>Réservation Facile</h3>
+                    <p>Réservez en moins de 5 minutes. Paiement par Mobile Money (Orange, MTN), carte bancaire ou en
+                        agence.</p>
+                </div>
+                <div class="avantage-card animate-on-scroll" data-delay="450">
+                    <div class="avantage-icon">
+                        <div class="icon-bg">🌍</div>
+                    </div>
+                    <h3>+85 Destinations</h3>
+                    <p>De Douala à Dubaï, de Yaoundé à New York. Nous couvrons l'Europe, l'Asie, l'Amérique et l'Afrique
+                        entière.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEMOIGNAGES ========== -->
+    <section class="temoignages" id="temoignages">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">💬 Ils Nous Font Confiance</span>
+                <h2 class="section-title">Témoignages de nos <span class="gradient-text">Clients</span></h2>
+                <p class="section-subtitle">Des milliers de camerounais nous ont fait confiance pour leurs voyages</p>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Grâce à SSV Travel, j'ai pu obtenir mon billet Douala-Paris à
+                                un prix imbattable. Le service client est exceptionnel, ils m'ont accompagné jusqu'à
+                                l'embarquement. Je recommande à 100% !"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MB</div>
+                                <div class="author-info">
+                                    <strong>Marie Biyaga</strong>
+                                    <span>Douala → Paris</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Service rapide et professionnel. J'ai réservé mon vol pour
+                                Dubaï via WhatsApp et tout a été géré en moins de 30 minutes. Le paiement par Mobile
+                                Money est très pratique. Merci SSV !"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JN</div>
+                                <div class="author-info">
+                                    <strong>Jean Nkoulou</strong>
+                                    <span>Yaoundé → Dubaï</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Cela fait 3 ans que je voyage exclusivement avec SSV Travel.
+                                Leur connaissance des meilleurs itinéraires et leurs prix négociés m'ont fait économiser
+                                beaucoup. Une agence de confiance !"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">CF</div>
+                                <div class="author-info">
+                                    <strong>Carine Fotso</strong>
+                                    <span>Douala → Istanbul</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="carouselPrev" aria-label="Précédent">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="carouselNext" aria-label="Suivant">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMULAIRE ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info animate-on-scroll">
+                    <span class="section-tag" data-i18n="contact_tag">📩 Contactez-nous</span>
+                    <h2 class="section-title"><span data-i18n="contact_title_1">Réservez Votre </span><span
+                            class="gradient-text" data-i18n="contact_title_2">Vol</span></h2>
+                    <p data-i18n="contact_subtitle">Remplissez le formulaire et notre équipe vous contactera dans les
+                        plus brefs délais avec les
+                        meilleures offres disponibles.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Téléphone / WhatsApp</strong>
+                                <span>+237 6XX XXX XXX</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@ssvtravel.cm</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Agence Principale</strong>
+                                <span>Douala, Cameroun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName" data-i18n="form_name">Nom Complet *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Ex: Jean Pierre Mbarga" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+237 6XX XXX XXX" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination" data-i18n="form_dest">Destination Souhaitée *</label>
+                            <input type="text" id="destination" name="destination" list="destinationList"
+                                placeholder="Tapez ou choisissez une destination" required autocomplete="off">
+                            <datalist id="destinationList">
+                                <option value="Paris, France">
+                                <option value="Dubaï, EAU">
+                                <option value="Istanbul, Turquie">
+                                <option value="New York, USA">
+                                <option value="Johannesburg, Afrique du Sud">
+                                <option value="Pékin, Chine">
+                                <option value="Montréal, Canada">
+                                <option value="Toronto, Canada">
+                                <option value="Londres, Royaume-Uni">
+                                <option value="Abidjan, Côte d'Ivoire">
+                                <option value="Bruxelles, Belgique">
+                                <option value="Berlin, Allemagne">
+                                <option value="Madrid, Espagne">
+                                <option value="Rome, Italie">
+                                <option value="Amsterdam, Pays-Bas">
+                                <option value="Moscou, Russie">
+                                <option value="Le Caire, Égypte">
+                                <option value="Casablanca, Maroc">
+                                <option value="Dakar, Sénégal">
+                                <option value="Lagos, Nigeria">
+                                <option value="Nairobi, Kenya">
+                                <option value="Addis-Abeba, Éthiopie">
+                                <option value="Libreville, Gabon">
+                                <option value="Bangui, Centrafrique">
+                                <option value="Kinshasa, RDC">
+                                <option value="Brazzaville, Congo">
+                                <option value="Cotonou, Bénin">
+                                <option value="São Paulo, Brésil">
+                                <option value="Los Angeles, USA">
+                                <option value="Miami, USA">
+                                <option value="Washington, USA">
+                                <option value="Bangkok, Thaïlande">
+                                <option value="Tokyo, Japon">
+                                <option value="Singapour">
+                                <option value="Sydney, Australie">
+                                <option value="Doha, Qatar">
+                                <option value="Riyadh, Arabie Saoudite">
+                                <option value="Genève, Suisse">
+                                <option value="Lisbonne, Portugal">
+                                <option value="Vancouver, Canada">
+                            </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="departureDate" data-i18n="form_date">Date de Départ *</label>
+                            <input type="date" id="departureDate" name="departureDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="3"
+                            placeholder="Précisez vos besoins : nombre de passagers, classe, escales préférées..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow btn-full" id="submitBtn">
+                        <span data-i18n="form_submit">Demander un Devis Gratuit</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                    <p class="form-disclaimer" data-i18n="form_disclaimer">🔒 Vos données sont sécurisées et ne seront
+                        jamais partagées.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SUCCESS MODAL ========== -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>Demande Envoyée !</h3>
+            <p>Merci pour votre intérêt. Notre équipe vous contactera dans les heures qui suivent avec les meilleures
+                offres pour
+                votre destination.</p>
+            <button class="btn btn-primary" id="closeModal">Fermer</button>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">✈️</span>
+                        <span class="logo-text">SSV <span class="logo-accent">Travel</span></span>
+                    </a>
+                    <p id="footerSlogan">Votre partenaire de confiance pour tous vos voyages depuis le Cameroun.
+                        Meilleurs prix, service premium.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link" id="socialFacebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link" id="socialInstagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp" class="social-link whatsapp" id="socialWhatsapp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_links_title">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#avantages">Nos Avantages</a></li>
+                        <li><a href="#temoignages">Témoignages</a></li>
+                        <li><a href="#contact">Réserver</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_dest_title">Destinations</h4>
+                    <ul>
+                        <li><a href="#contact">Paris</a></li>
+                        <li><a href="#contact">Dubaï</a></li>
+                        <li><a href="#contact">Montréal</a></li>
+                        <li><a href="#contact">Toronto</a></li>
+                        <li><a href="#contact">Istanbul</a></li>
+                        <li><a href="#contact">New York</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_contact_title">Contact</h4>
+                    <ul id="footerContactList">
+                        <li>📞 +237 6XX XXX XXX</li>
+                        <li>💬 WhatsApp: +237 6XX XXX XXX</li>
+                        <li>📧 info@ssvtravel.cm</li>
+                        <li>📍 Douala, Cameroun</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_hours_title">Horaires</h4>
+                    <ul id="footerHorairesList">
+                        <li>Lun - Ven: 08h00 - 18h00</li>
+                        <li>Samedi: 09h00 - 15h00</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_pay_title">Paiement</h4>
+                    <ul id="footerPaiementList">
+                        <li>✓ Orange Money</li>
+                        <li>✓ MTN Mobile Money</li>
+                        <li>✓ Carte Bancaire</li>
+                        <li>✓ Virement Bancaire</li>
+                        <li>✓ Espèces en agence</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyrightText">&copy; 2026 SSV Travel. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed', err));
+            });
+        }
+    </script>
+</body>
+
+</html>

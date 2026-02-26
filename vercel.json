@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "ssv-travel",
+  "cleanUrls": true,
+  "framework": null,
+  "installCommand": "echo 'No install needed'",
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "."
+}

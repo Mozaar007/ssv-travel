@@ -8,7 +8,7 @@ const TRANSLATIONS = {
         nav_book: "Réserver",
 
         // Hero
-        hero_badge: "✨ Planifions votre envol !!!",
+        hero_badge: "✨ Planifions Votre Envol !!!",
         hero_title_1: "Voyagez ",
         hero_title_2: "Sans Limite",
         hero_title_3: "À Travers le Monde",
@@ -105,7 +105,7 @@ const TRANSLATIONS = {
         nav_book: "Book Now",
 
         // Hero
-        hero_badge: "✨ Let's plan your flight !!!",
+        hero_badge: "✨ Let's Plan Your Flight !!!",
         hero_title_1: "Travel ",
         hero_title_2: "Without Limits",
         hero_title_3: "Across the World",

@@ -359,17 +359,31 @@ img {
     padding: 0 24px;
 }
 
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-badge {
     display: inline-block;
     padding: 8px 20px;
     background: rgba(224, 26, 34, 0.1);
     border: 1px solid rgba(224, 26, 34, 0.25);
     border-radius: 50px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
     color: #ffffff;
     margin-bottom: 28px;
     backdrop-filter: blur(10px);
+    animation: blink 1s infinite;
 }
 
 .hero-title {

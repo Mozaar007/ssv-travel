@@ -8,7 +8,7 @@ const TRANSLATIONS = {
         nav_book: "Réserver",
 
         // Hero
-        hero_badge: "🌍 Première agence de voyage au Cameroun",
+        hero_badge: "✨ Planifions votre envol !!!",
         hero_title_1: "Voyagez ",
         hero_title_2: "Sans Limite",
         hero_title_3: "À Travers le Monde",
@@ -30,7 +30,16 @@ const TRANSLATIONS = {
         dest_title_2: "Populaires",
         dest_subtitle: "Découvrez nos destinations les plus demandées avec des tarifs imbattables",
         price_from: "À partir de",
+        prices_updated: "Mise à jour : Aujourd'hui",
         book_btn: "Réserver",
+        dest_paris_desc: "La Ville Lumière vous attend avec ses monuments iconiques et sa gastronomie raffinée.",
+        dest_dubai_desc: "Luxe, modernité et démesure au cœur du désert. Shopping et aventure garantis.",
+        dest_istanbul_desc: "Entre Orient et Occident, une ville millénaire aux saveurs et couleurs envoûtantes.",
+        dest_ny_desc: "La ville qui ne dort jamais. Times Square, Broadway, Central Park et bien plus.",
+        dest_joburgh_desc: "La porte d'entrée de l'Afrique australe. Safari, culture et modernité africaine.",
+        dest_beijing_desc: "Empire du Milieu : Grande Muraille, Cité Interdite et culture fascinante.",
+        dest_montreal_desc: "Le cœur francophone du Canada. Culture vibrante, festivals, gastronomie et accueil chaleureux.",
+        dest_toronto_desc: "La métropole anglophone du Canada. CN Tower, diversité culturelle et opportunités infinies.",
 
         // Advantages
         adv_tag: "🏆 Pourquoi Nous ?",
@@ -51,6 +60,9 @@ const TRANSLATIONS = {
         test_title_1: "Témoignages de nos ",
         test_title_2: "Clients",
         test_subtitle: "Des milliers de camerounais nous ont fait confiance pour leurs voyages",
+        test_1_text: "\"Grâce à SSV Travel, j'ai pu obtenir mon billet Douala-Paris à un prix imbattable. Le service client est exceptionnel, ils m'ont accompagné jusqu'à l'embarquement. Je recommande à 100% !\"",
+        test_2_text: "\"Service rapide et professionnel. J'ai réservé mon vol pour Dubaï via WhatsApp et tout a été géré en moins de 30 minutes. Le paiement par Mobile Money est très pratique. Merci SSV !\"",
+        test_3_text: "\"Cela fait 3 ans que je voyage exclusivement avec SSV Travel. Leur connaissance des meilleurs itinéraires et leurs prix négociés m'ont fait économiser beaucoup. Une agence de confiance !\"",
 
         // Contact Form
         contact_tag: "📩 Contactez-nous",
@@ -81,6 +93,7 @@ const TRANSLATIONS = {
         footer_contact_title: "Contact",
         footer_hours_title: "Horaires",
         footer_pay_title: "Paiement",
+        footer_slogan: "Votre partenaire de confiance pour tous vos voyages depuis le Cameroun. Meilleurs prix, service premium.",
         copyright: "© 2026 SSV Travel. Tous droits réservés."
     },
     en: {
@@ -92,7 +105,7 @@ const TRANSLATIONS = {
         nav_book: "Book Now",
 
         // Hero
-        hero_badge: "🌍 Leading travel agency in Cameroon",
+        hero_badge: "✨ Let's plan your flight !!!",
         hero_title_1: "Travel ",
         hero_title_2: "Without Limits",
         hero_title_3: "Across the World",
@@ -114,7 +127,16 @@ const TRANSLATIONS = {
         dest_title_2: "Destinations",
         dest_subtitle: "Discover our most requested destinations with unbeatable rates",
         price_from: "Starting from",
+        prices_updated: "Updated: Today",
         book_btn: "Book",
+        dest_paris_desc: "The City of Light awaits you with its iconic monuments and refined gastronomy.",
+        dest_dubai_desc: "Luxury, modernity, and scale in the heart of the desert. Shopping and adventure guaranteed.",
+        dest_istanbul_desc: "Between East and West, a millenary city with enchanting flavors and colors.",
+        dest_ny_desc: "The city that never sleeps. Times Square, Broadway, Central Park, and much more.",
+        dest_joburgh_desc: "The gateway to Southern Africa. Safari, culture, and African modernity.",
+        dest_beijing_desc: "Middle Kingdom: Great Wall, Forbidden City, and fascinating culture.",
+        dest_montreal_desc: "The French-speaking heart of Canada. Vibrant culture, festivals, gastronomy, and warm welcome.",
+        dest_toronto_desc: "The English-speaking metropolis of Canada. CN Tower, cultural diversity, and endless opportunities.",
 
         // Advantages
         adv_tag: "🏆 Why Us?",
@@ -135,6 +157,9 @@ const TRANSLATIONS = {
         test_title_1: "Customer ",
         test_title_2: "Testimonials",
         test_subtitle: "Thousands of Cameroonians have trusted us with their travels",
+        test_1_text: "\"Thanks to SSV Travel, I was able to get my Douala-Paris ticket at an unbeatable price. The customer service is exceptional, they accompanied me until boarding. I recommend 100%!\"",
+        test_2_text: "\"Fast and professional service. I booked my flight to Dubai via WhatsApp and everything was handled in less than 30 minutes. Mobile Money payment is very convenient. Thanks SSV!\"",
+        test_3_text: "\"I have been traveling exclusively with SSV Travel for 3 years. Their knowledge of the best itineraries and negotiated prices have saved me a lot. A trusted agency!\"",
 
         // Contact Form
         contact_tag: "📩 Contact Us",
@@ -165,6 +190,7 @@ const TRANSLATIONS = {
         footer_contact_title: "Contact",
         footer_hours_title: "Opening Hours",
         footer_pay_title: "Payment",
+        footer_slogan: "Your trusted partner for all your travels from Cameroon. Best prices, premium service.",
         copyright: "© 2026 SSV Travel. All rights reserved."
     }
 };

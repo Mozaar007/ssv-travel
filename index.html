@@ -8,7 +8,7 @@
         content="SSV Travel - Votre agence de voyage au Cameroun. Réservez vos billets d'avion vers Paris, Dubaï, Istanbul, New York et plus. Meilleurs prix garantis.">
     <meta name="keywords"
         content="billet avion Cameroun, voyage Cameroun, agence voyage Douala, agence voyage Yaoundé, vol pas cher Cameroun">
-    <title>SSV Travel | Voyagez Sans Limites Depuis le Cameroun ✈️</title>
+    <title>SSV Travel | Voyagez Sans Limites à travers le monde ✈️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,8 +28,9 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">✈️</span>
-                <span class="logo-text">SSV <span class="logo-accent">Travel</span></span>
+                <img src="logo.png" alt="SSV TRAVEL Logo" class="brand-logo"
+                    style="height: 40px; width: auto; margin-right: 12px; display: inline-block; vertical-align: middle;">
+                <span class="logo-text">SSV <span class="logo-accent">TRAVEL</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero" data-i18n="nav_home">Accueil</a></li>
@@ -56,8 +57,7 @@
         <div class="hero-bg-overlay"></div>
         <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-content">
-            <span class="hero-badge animate-on-scroll" data-i18n="hero_badge">🌍 Première agence de voyage au
-                Cameroun</span>
+            <span class="hero-badge animate-on-scroll" data-i18n="hero_badge">✨ Planifions votre envol !!!</span>
             <h1 class="hero-title animate-on-scroll">
                 <span data-i18n="hero_title_1">Voyagez </span><span class="gradient-text" data-i18n="hero_title_2">Sans
                     Limite</span><br>
@@ -132,11 +132,12 @@
                             <span>France</span>
                         </div>
                         <h3>Paris</h3>
-                        <p>La Ville Lumière vous attend avec ses monuments iconiques et sa gastronomie raffinée.</p>
+                        <p data-i18n="dest_paris_desc">La Ville Lumière vous attend avec ses monuments iconiques et sa
+                            gastronomie raffinée.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label" data-i18n="price_from">À partir de</span>
-                                <span class="price-value">450 000 FCFA</span>
+                                <span class="price-value" data-base-price="450000">450 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small" data-i18n="book_btn">Réserver</a>
                         </div>
@@ -160,11 +161,12 @@
                             <span>Émirats Arabes Unis</span>
                         </div>
                         <h3>Dubaï</h3>
-                        <p>Luxe, modernité et démesure au cœur du désert. Shopping et aventure garantis.</p>
+                        <p data-i18n="dest_dubai_desc">Luxe, modernité et démesure au cœur du désert. Shopping et
+                            aventure garantis.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">380 000 FCFA</span>
+                                <span class="price-value" data-base-price="380000">380 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -187,11 +189,12 @@
                             <span>Turquie</span>
                         </div>
                         <h3>Istanbul</h3>
-                        <p>Entre Orient et Occident, une ville millénaire aux saveurs et couleurs envoûtantes.</p>
+                        <p data-i18n="dest_istanbul_desc">Entre Orient et Occident, une ville millénaire aux saveurs et
+                            couleurs envoûtantes.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">320 000 FCFA</span>
+                                <span class="price-value" data-base-price="320000">320 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -215,11 +218,12 @@
                             <span>États-Unis</span>
                         </div>
                         <h3>New York</h3>
-                        <p>La ville qui ne dort jamais. Times Square, Broadway, Central Park et bien plus.</p>
+                        <p data-i18n="dest_ny_desc">La ville qui ne dort jamais. Times Square, Broadway, Central Park et
+                            bien plus.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">580 000 FCFA</span>
+                                <span class="price-value" data-base-price="580000">580 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -242,11 +246,12 @@
                             <span>Afrique du Sud</span>
                         </div>
                         <h3>Johannesburg</h3>
-                        <p>La porte d'entrée de l'Afrique australe. Safari, culture et modernité africaine.</p>
+                        <p data-i18n="dest_joburgh_desc">La porte d'entrée de l'Afrique australe. Safari, culture et
+                            modernité africaine.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">290 000 FCFA</span>
+                                <span class="price-value" data-base-price="290000">290 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -270,11 +275,12 @@
                             <span>Chine</span>
                         </div>
                         <h3>Pékin</h3>
-                        <p>Empire du Milieu : Grande Muraille, Cité Interdite et culture fascinante.</p>
+                        <p data-i18n="dest_beijing_desc">Empire du Milieu : Grande Muraille, Cité Interdite et culture
+                            fascinante.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">420 000 FCFA</span>
+                                <span class="price-value" data-base-price="420000">420 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -298,12 +304,13 @@
                             <span>Canada (Québec)</span>
                         </div>
                         <h3>Montréal</h3>
-                        <p>Le cœur francophone du Canada. Culture vibrante, festivals, gastronomie et accueil
+                        <p data-i18n="dest_montreal_desc">Le cœur francophone du Canada. Culture vibrante, festivals,
+                            gastronomie et accueil
                             chaleureux.</p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">520 000 FCFA</span>
+                                <span class="price-value" data-base-price="520000">520 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -327,12 +334,13 @@
                             <span>Canada (Ontario)</span>
                         </div>
                         <h3>Toronto</h3>
-                        <p>La métropole anglophone du Canada. CN Tower, diversité culturelle et opportunités infinies.
+                        <p data-i18n="dest_toronto_desc">La métropole anglophone du Canada. CN Tower, diversité
+                            culturelle et opportunités infinies.
                         </p>
                         <div class="card-footer">
                             <div class="card-price">
                                 <span class="price-label">À partir de</span>
-                                <span class="price-value">540 000 FCFA</span>
+                                <span class="price-value" data-base-price="540000">540 000 FCFA</span>
                             </div>
                             <a href="#contact" class="btn btn-small">Réserver</a>
                         </div>
@@ -366,24 +374,27 @@
                     <div class="avantage-icon">
                         <div class="icon-bg">🕐</div>
                     </div>
-                    <h3>Support 24h/7j</h3>
-                    <p>Notre équipe est disponible jour et nuit par WhatsApp, téléphone et email pour répondre à toutes
+                    <h3 data-i18n="adv_2_title">Support 24h/7j</h3>
+                    <p data-i18n="adv_2_desc">Notre équipe est disponible jour et nuit par WhatsApp, téléphone et email
+                        pour répondre à toutes
                         vos questions.</p>
                 </div>
                 <div class="avantage-card animate-on-scroll" data-delay="300">
                     <div class="avantage-icon">
                         <div class="icon-bg">📱</div>
                     </div>
-                    <h3>Réservation Facile</h3>
-                    <p>Réservez en moins de 5 minutes. Paiement par Mobile Money (Orange, MTN), carte bancaire ou en
+                    <h3 data-i18n="adv_3_title">Réservation Facile</h3>
+                    <p data-i18n="adv_3_desc">Réservez en moins de 5 minutes. Paiement par Mobile Money (Orange, MTN),
+                        carte bancaire ou en
                         agence.</p>
                 </div>
                 <div class="avantage-card animate-on-scroll" data-delay="450">
                     <div class="avantage-icon">
                         <div class="icon-bg">🌍</div>
                     </div>
-                    <h3>+85 Destinations</h3>
-                    <p>De Douala à Dubaï, de Yaoundé à New York. Nous couvrons l'Europe, l'Asie, l'Amérique et l'Afrique
+                    <h3 data-i18n="adv_4_title">+85 Destinations</h3>
+                    <p data-i18n="adv_4_desc">De Douala à Dubaï, de Yaoundé à New York. Nous couvrons l'Europe, l'Asie,
+                        l'Amérique et l'Afrique
                         entière.</p>
                 </div>
             </div>
@@ -395,7 +406,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">💬 Ils Nous Font Confiance</span>
-                <h2 class="section-title">Témoignages de nos <span class="gradient-text">Clients</span></h2>
+                <h2 class="section-title"><span data-i18n="test_title_1">Témoignages de nos </span><span
+                        class="gradient-text" data-i18n="test_title_2">Clients</span></h2>
                 <p class="section-subtitle">Des milliers de camerounais nous ont fait confiance pour leurs voyages</p>
             </div>
             <div class="carousel-wrapper">
@@ -403,7 +415,8 @@
                     <div class="carousel-track" id="carouselTrack">
                         <div class="testimonial-card">
                             <div class="testimonial-stars">★★★★★</div>
-                            <p class="testimonial-text">"Grâce à SSV Travel, j'ai pu obtenir mon billet Douala-Paris à
+                            <p class="testimonial-text" data-i18n="test_1_text">"Grâce à SSV Travel, j'ai pu obtenir mon
+                                billet Douala-Paris à
                                 un prix imbattable. Le service client est exceptionnel, ils m'ont accompagné jusqu'à
                                 l'embarquement. Je recommande à 100% !"</p>
                             <div class="testimonial-author">
@@ -416,7 +429,8 @@
                         </div>
                         <div class="testimonial-card">
                             <div class="testimonial-stars">★★★★★</div>
-                            <p class="testimonial-text">"Service rapide et professionnel. J'ai réservé mon vol pour
+                            <p class="testimonial-text" data-i18n="test_2_text">"Service rapide et professionnel. J'ai
+                                réservé mon vol pour
                                 Dubaï via WhatsApp et tout a été géré en moins de 30 minutes. Le paiement par Mobile
                                 Money est très pratique. Merci SSV !"</p>
                             <div class="testimonial-author">
@@ -429,7 +443,8 @@
                         </div>
                         <div class="testimonial-card">
                             <div class="testimonial-stars">★★★★★</div>
-                            <p class="testimonial-text">"Cela fait 3 ans que je voyage exclusivement avec SSV Travel.
+                            <p class="testimonial-text" data-i18n="test_3_text">"Cela fait 3 ans que je voyage
+                                exclusivement avec SSV Travel.
                                 Leur connaissance des meilleurs itinéraires et leurs prix négociés m'ont fait économiser
                                 beaucoup. Une agence de confiance !"</p>
                             <div class="testimonial-author">
@@ -476,21 +491,21 @@
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div>
-                                <strong>Téléphone / WhatsApp</strong>
+                                <strong data-i18n="contact_phone_label">Téléphone / WhatsApp</strong>
                                 <span>+237 6XX XXX XXX</span>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
-                                <strong>Email</strong>
+                                <strong data-i18n="contact_email_label">Email</strong>
                                 <span>info@ssvtravel.cm</span>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <strong>Agence Principale</strong>
+                                <strong data-i18n="contact_address_label">Agence Principale</strong>
                                 <span>Douala, Cameroun</span>
                             </div>
                         </div>
@@ -601,10 +616,12 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="nav-logo">
-                        <span class="logo-icon">✈️</span>
-                        <span class="logo-text">SSV <span class="logo-accent">Travel</span></span>
+                        <img src="logo.png" alt="SSV TRAVEL Logo" class="brand-logo footer-logo"
+                            style="height: 60px; width: auto; margin-bottom: 10px; display: block;">
+                        <span class="logo-text">SSV <span class="logo-accent">TRAVEL</span></span>
                     </a>
-                    <p id="footerSlogan">Votre partenaire de confiance pour tous vos voyages depuis le Cameroun.
+                    <p id="footerSlogan" data-i18n="footer_slogan">Votre partenaire de confiance pour tous vos voyages
+                        depuis le Cameroun.
                         Meilleurs prix, service premium.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook" class="social-link" id="socialFacebook">
@@ -677,7 +694,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="copyrightText">&copy; 2026 SSV Travel. Tous droits réservés.</p>
+                <p id="copyrightText" data-i18n="copyright">&copy; 2026 SSV Travel. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

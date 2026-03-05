@@ -416,3 +416,33 @@ function initDatePicker() {
         dateInput.min = `${yyyy}-${mm}-${dd}`;
     }
 }
+
+/**
+ * Dynamic Pricing Logic
+ * Simulates daily price updates to present the lowest market prices.
+ * Uses a daily seed to ensure consistency for the user on a single day.
+ */
+function updateDynamicPricing() {
+    const today = new Date();
+    const seed = today.getFullYear() * 1000 + today.getMonth() * 100 + today.getDate();
+
+    // Simple pseudo-random function
+    const seededRandom = (s) => {
+        const x = Math.sin(s) * 10000;
+        return x - Math.floor(x);
+    };
+
+    document.querySelectorAll('.price-value[data-base-price]').forEach(el => {
+        const basePrice = parseInt(el.getAttribute('data-base-price'));
+        const variation = (seededRandom(seed + basePrice) * 0.05) - 0.02; // -2% to +3% variation
+        const finalPrice = Math.floor((basePrice * (1 + variation)) / 100) * 100; // Round to nearest 100
+
+        el.textContent = finalPrice.toLocaleString('fr-FR') + ' FCFA';
+    });
+}
+
+// Run dynamic pricing after translations and on load
+document.addEventListener('DOMContentLoaded', () => {
+    // Small delay to ensure translations are applied if any
+    setTimeout(updateDynamicPricing, 100);
+});

@@ -21,7 +21,7 @@ const SITE_CONFIG = {
     // 📞  NUMÉROS DE TÉLÉPHONE
     // ──────────────────────────────────────────────
     telephonePrincipal: "+237 656 979 239",       // Numéro principal affiché sur le site
-    telephoneSecondaire: "+237 673 474 979",      // Numéro secondaire (optionnel)
+    telephoneSecondaire: "+237 673 47 49 79",      // Numéro secondaire (optionnel)
 
     // ──────────────────────────────────────────────
     // 💬  WHATSAPP
@@ -111,7 +111,7 @@ function applyConfig() {
         // Téléphone / WhatsApp
         const phoneDiv = contactItems[0].querySelector('div:last-child');
         if (phoneDiv) {
-            phoneDiv.querySelector('span').textContent = C.telephonePrincipal;
+            phoneDiv.querySelector('span').textContent = C.telephoneSecondaire ? `${C.telephonePrincipal} / ${C.telephoneSecondaire}` : C.telephonePrincipal;
         }
         // Email
         const emailDiv = contactItems[1].querySelector('div:last-child');
@@ -129,8 +129,8 @@ function applyConfig() {
     const footerContact = document.getElementById('footerContactList');
     if (footerContact) {
         footerContact.innerHTML = `
-            <li>📞 ${C.telephonePrincipal}</li>
-            <li>💬 WhatsApp: ${C.whatsappNumero}</li>
+            <li>📞 ${C.telephoneSecondaire ? `${C.telephonePrincipal} / ${C.telephoneSecondaire}` : C.telephonePrincipal}</li>
+            <li>💬 WhatsApp: ${C.telephoneSecondaire ? `${C.telephonePrincipal} / ${C.telephoneSecondaire}` : C.telephonePrincipal}</li>
             <li>📧 ${C.emailPrincipal}</li>
             <li>📍 ${C.adressePrincipale}</li>
             ${C.adresseComplete ? `<li>🏢 ${C.adresseComplete}</li>` : ''}

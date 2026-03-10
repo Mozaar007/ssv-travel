@@ -8,16 +8,16 @@
 }
 
 :root {
-    --bg-primary: #0a0a1a;
-    --bg-secondary: #0f0c29;
-    --bg-tertiary: #1a1635;
-    --bg-card: rgba(255, 255, 255, 0.04);
-    --bg-card-hover: rgba(255, 255, 255, 0.08);
-    --bg-glass: rgba(10, 10, 26, 0.75);
+    --bg-primary: #f4f7fb;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #eaeff5;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-card-hover: #ffffff;
+    --bg-glass: rgba(255, 255, 255, 0.85);
 
-    --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.72);
-    --text-muted: rgba(255, 255, 255, 0.45);
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
 
     --accent-red: #d32f2f;
     /* Vibrant red from logo */
@@ -27,7 +27,7 @@
     --accent-blue-light: #3949ab;
 
     --gradient-main: linear-gradient(135deg, #d32f2f 0%, #b71c1c 50%, #8e0000 100%);
-    --gradient-hero: linear-gradient(135deg, #0a0a1a 0%, #1a237e 50%, #0a0a1a 100%);
+    --gradient-hero: linear-gradient(135deg, #e0f2fe 0%, #f4f7fb 50%, #eff6ff 100%);
     /* Navy blue integration */
     --gradient-text: linear-gradient(135deg, #d32f2f, #ef5350, #d32f2f);
     --gradient-card: linear-gradient(145deg, rgba(211, 47, 47, 0.1), rgba(40, 53, 147, 0.05));
@@ -380,7 +380,7 @@ img {
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
-    color: #ffffff;
+    color: var(--accent-red);
     margin-bottom: 28px;
     backdrop-filter: blur(10px);
     animation: blink 1s infinite;
@@ -447,7 +447,7 @@ img {
 .btn-outline {
     background: transparent;
     color: var(--text-primary);
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid rgba(30, 41, 59, 0.2);
 }
 
 .btn-outline:hover {
@@ -1410,6 +1410,16 @@ img {
         justify-content: center;
         padding: 16px 24px;
         /* Larger touch target */
+    }
+
+    .hero-badge {
+        font-size: 16px !important;
+        padding: 6px 16px !important;
+        margin-top: 50px !important;
+        display: block !important;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-stats {

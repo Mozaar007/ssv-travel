@@ -106,6 +106,10 @@ img {
     background-clip: text;
 }
 
+.text-blue-dark {
+    color: var(--accent-blue);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {
     from {
@@ -375,13 +379,13 @@ img {
 .hero-badge {
     display: inline-block;
     padding: 8px 20px;
-    background: rgba(224, 26, 34, 0.1);
-    border: 1px solid rgba(224, 26, 34, 0.25);
+    background: rgba(40, 53, 147, 0.1);
+    border: 1px solid rgba(40, 53, 147, 0.25);
     border-radius: 50px;
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
-    color: var(--accent-red);
+    color: var(--accent-blue);
     margin-bottom: 28px;
     backdrop-filter: blur(10px);
     animation: blink 1s infinite;

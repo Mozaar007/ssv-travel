@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroParticles();
     initScrollAnimations();
     initCounters();
+    injectTestimonials();
     initCarousel();
     initForm();
     initSmoothScroll();
@@ -119,6 +120,60 @@ function animateCounter(el) {
     };
 
     requestAnimationFrame(updateCounter);
+}
+
+// ===== DYNAMIC TESTIMONIALS =====
+function injectTestimonials() {
+    const clients = [
+        "Ngue Charles", "Saurel Mozaar", "Danielle DeLylle", "Reine De LaBité", "Thim Boros", "Albert Yves", "jean Paul N", "Brice Bernardo", "Merlin Mom", "Urielle Bayack", "Tchoffo Chanceline", "Tchena Jean", "Mireille Kenfack", "Nadeige Oloa", "Mbida Judith", "Mfegue Sandrine", "Eric Boum", "Martin Tussel", "Gérémie NADADJEU", "Louis Séba", "Elize N", "Megaptche Louise", "Chekem Basile", "Kom Martine", "Annette James", "Mickael Barnett", "Geremie Donfouet", "Nicolas Takou", "Guy Tchankeu", "Serges Wonssi", "Sosthène Mbazoa", "Prince Kennett Kenyui", "Agbor Valery", "Kristin Azi'i", "Alenyui Valentine", "Blessing Opara", "Precious Mbalawi"
+    ];
+
+    const messages = {
+        fr: [
+            "Service impeccable, je recommande vivement SSV Travel !",
+            "Très bonne agence, des prix vraiment compétitifs.",
+            "Merci pour cet accompagnement de qualité. Super voyage.",
+            "Une assistance au top. Le meilleur choix pour voyager !",
+            "Réservation rapide et personnel très réactif.",
+            "Agence sérieuse et à l'écoute des clients.",
+            "Meilleurs prix sur le marché. J'ai été très satisfait."
+        ],
+        en: [
+            "Impeccable service, I highly recommend SSV Travel!",
+            "Very good agency, really competitive prices.",
+            "Thanks for this quality support. Great trip.",
+            "Top-notch assistance. The best choice for traveling!",
+            "Fast booking and very responsive staff.",
+            "Serious agency that listens to its customers.",
+            "Best prices on the market. I was very satisfied."
+        ]
+    };
+
+    const track = document.getElementById('carouselTrack');
+    if (!track) return;
+
+    clients.forEach((name, index) => {
+        const msgIndex = index % messages.fr.length;
+        const nameParts = name.trim().split(' ').filter(n => n.length > 0);
+        let initials = nameParts[0][0];
+        if (nameParts.length > 1) initials += nameParts[nameParts.length - 1][0];
+        initials = initials.toUpperCase();
+
+        const card = document.createElement('div');
+        card.className = 'testimonial-card';
+        card.innerHTML = `
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text dyn-test" data-fr="${messages.fr[msgIndex]}" data-en="${messages.en[msgIndex]}">"${messages.fr[msgIndex]}"</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">${initials}</div>
+                <div class="author-info">
+                    <strong>${name}</strong>
+                    <span class="dyn-test-client" data-fr="Client Satisfait" data-en="Satisfied Client">Client Satisfait</span>
+                </div>
+            </div>
+        `;
+        track.appendChild(card);
+    });
 }
 
 // ===== CAROUSEL =====
@@ -263,6 +318,14 @@ function updateContent(lang) {
     if (messageField && translateDict.form_message_placeholder) {
         messageField.placeholder = translateDict.form_message_placeholder;
     }
+
+    // Update dynamic testimonials
+    document.querySelectorAll('.dyn-test').forEach(el => {
+        el.textContent = '"' + el.getAttribute(`data-${lang}`) + '"';
+    });
+    document.querySelectorAll('.dyn-test-client').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+    });
 
     // Update document title and lang attribute
     document.documentElement.lang = lang;
